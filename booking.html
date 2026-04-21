@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Videography - Advanced Visuals</title>
+    <link rel="icon" type="image/jpg" href="IMG-20260416-WA0012.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Advanced Visuals</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-content">
+            <h1>Book Your Videography Session</h1>
+            <p>Schedule Your Professional Video Coverage</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2>Why Choose Advanced Visuals for Videography?</h2>
+                    <div class="info-list">
+                        <div class="info-point">
+                            <h4>Personal, Hands-On Service</h4>
+                            <p>Work directly with our dedicated two-person team for personalized attention</p>
+                        </div>
+                        <div class="info-point">
+                            <h4>4K Cinematic Quality</h4>
+                            <p>Professional equipment producing stunning cinematic video</p>
+                        </div>
+                        <div class="info-point">
+                            <h4>Expert Storytelling</h4>
+                            <p>Custom narrative videos that capture your unique moments</p>
+                        </div>
+                        <div class="info-point">
+                            <h4>Professional Editing</h4>
+                            <p>Expert color grading, sound design, and post-production</p>
+                        </div>
+                        <div class="info-point">
+                            <h4>Dedicated Support</h4>
+                            <p>We're here to answer all your videography questions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="bookingForm" class="booking-form" onsubmit="handleBookingSubmit(event)">
+                    <h2>Video Booking Form</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="package">Select Video Package *</label>
+                        <select id="package" name="package" required>
+                            <option value="">-- Choose a Package --</option>
+                            <option value="Standard">Standard (R5,399)</option>
+                            <option value="Executive">Executive (R7,899)</option>
+                            <option value="Deluxe">Deluxe (R10,999)</option>
+                            <option value="Premium">Premium (R13,999)</option>
+                            <option value="Elegant">Elegant (R16,999)</option>
+                            <option value="The Grand">The Grand (R24,999)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Event Location / Venue *</label>
+                        <input type="text" id="location" name="location" placeholder="Where will the video coverage take place?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Details / Special Requests</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your event, videography style preferences, or any special requests..."></textarea>
+                    </div>
+
+                    <div class="form-agreement">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I agree to the terms and conditions</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Booking Request</button>
+                </form>
+
+                <div id="confirmationMessage" class="confirmation-message" style="display: none;">
+                    <div class="confirmation-content">
+                        <h3>Thank You for Your Booking!</h3>
+                        <p>Your videography booking request has been received successfully.</p>
+                        <p><strong>We typically respond within 24 hours</strong> to confirm our availability for your date and discuss the next steps.</p>
+                        <p style="color: var(--light-brown); font-size: 14px; margin-top: 20px;">Check your email for our response at the address you provided.</p>
+                        <a href="index.html" class="confirmation-btn">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:xtimelessmedia@gmail.com">xtimelessmedia@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+27665807239">+27 66 580 7239</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>Hours</h4>
+                    <p>Monday - Friday: 9:00 am - 6:00 pm<br>Saturday: 9:00 am - 12:00 noon</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Social Media</h4>
+                    <a href="https://www.instagram.com/advancevisuals_?igsh=Mjh0eWh0M2Ntc3ht" target="_blank" class="cta-button">Follow on Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Advanced Visuals. All rights reserved.</p>
+            <p>Professional Videography & Cinematography Services</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
